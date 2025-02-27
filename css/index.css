@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(64, 40, 122);
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.navbar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #eec382;
+    color: rgb(64, 40, 122);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.content {
+    margin-left: 250px; /* Adjust to match the width of the navbar */
+    padding: 20px;
+    flex-grow: 1;
+    height: 100vh; /* Make it the full height of the viewport */
+    overflow: auto; /* Add scroll if content overflows */
+}
+
+h1 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Prevent the cards from spilling out */
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.carousel-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn {
+    background-color: #40287A;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.carousel-btn:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+#prevBtn {
+    margin-right: 10px;
+}
+
+#nextBtn {
+    margin-left: 10px;
+}
+
+/* Carousel Content */
+.carousel-content {
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* Hide the overflow */
+    width: 80%; /* You can adjust this width as needed */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Carousel Item */
+.carousel-item {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    width: 23%; /* Adjust to fit 4 items in the container */
+    height: 220px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex-shrink: 0; /* Prevents shrinking of items */
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+}
