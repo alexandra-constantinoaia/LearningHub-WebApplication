@@ -62,27 +62,3 @@ body {
     overflow: auto; /* Add scroll if content overflows */
 }
 
-.general-section {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.general-section h1 {
-    margin-bottom: 20px;
-}
-
-.general-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.general-section ul li {
-    margin-bottom: 10px;
-}
-
-.general-section h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
