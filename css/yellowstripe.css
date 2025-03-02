@@ -60,5 +60,111 @@ body {
     flex-grow: 1;
     height: 100vh; /* Make it the full height of the viewport */
     overflow: auto; /* Add scroll if content overflows */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for sections */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for cards */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    height: 400px; /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.oath-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.oath-container .ro, .oath-container .eng {
+    width: 48%;
+}
+
+.tenet-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tenet {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for tenets */
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: rgb(64, 40, 122);
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #eec382;
+}
+
+table tr td {
+    text-align: center;
+}
+
+table td:nth-child(1),
+table td:nth-child(2),
+table td:nth-child(5),
+table td:nth-child(6) {
+    background-color: #e6e6fa; /* Light purple */
+}
+
+table td:nth-child(3),
+table td:nth-child(4) {
+    background-color: white;
 }
 
